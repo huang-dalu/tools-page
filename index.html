@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自动化工具平台 | 电商、自媒体自动化解决方案</title>
+  <meta name="description" content="专注为电商、品牌、自媒体团队提供自动化流程工具，覆盖小红书、抖音、电商、跨境等多个领域">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 主题切换 -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="切换主题">
+    <span class="theme-icon">🌙</span>
+  </button>
+
+  <!-- 头部 -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- 团队介绍 -->
+        <section class="intro-section">
+          <h1 class="site-title">自动化工具平台</h1>
+          <p id="team-intro">我们团队专注为<strong>电商、品牌、自媒体团队</strong>提供自动化流程工具。已落地 <strong>300+</strong> 场景，覆盖<strong>小红书/抖音/电商/跨境</strong>多个领域自动化解决方案。</p>
+          <p id="certification">🏆 影刀 RPA 官方认证服务商</p>
+          <nav class="social-links" aria-label="社交媒体">
+            <a href="#" id="weixin-link" class="social-link" target="_blank" rel="noopener">
+              📱 公众号
+            </a>
+            <a href="#" id="xiaohongshu-link" class="social-link" target="_blank" rel="noopener">
+              🍠 小红书
+            </a>
+          </nav>
+        </section>
+
+        <!-- 购买信息 -->
+        <section class="purchase-section">
+          <div class="purchase-card">
+            <div class="purchase-item purchase-note">
+              <span class="purchase-icon">🎁</span>
+              <div class="purchase-text">
+                <strong>购买即享服务</strong>
+                <span>提供完整图文 + 视频演示；1V1 免费答疑</span>
+              </div>
+            </div>
+            <div class="purchase-item lifetime-privilege">
+              <span class="purchase-icon">💎</span>
+              <div class="purchase-text">
+                <strong>买断制特权</strong>
+                <span>源码直接部署到您的账号；免费远程演示指导。永久使用，无需续费</span>
+              </div>
+            </div>
+          </div>
+          <p class="contact">需要购买或有业务场景需求？请微信扫码咨询</p>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <!-- 重点推荐 -->
+  <section class="featured-section">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-icon">⭐</span>
+        <h2 class="section-title">热门工具</h2>
+      </header>
+      <div class="featured-grid" id="featured-grid">
+        <!-- 重点推荐工具将通过 JS 动态生成 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 平台导航 -->
+  <nav class="platform-nav">
+    <div class="container">
+      <ul class="platform-tabs" id="platform-tabs" role="tablist">
+        <!-- 平台 tabs 将通过 JS 动态生成 -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主内容 -->
+  <main class="main-content">
+    <div class="container">
+      <div id="platform-content" role="tabpanel">
+        <!-- 平台内容将通过 JS 动态生成 -->
+      </div>
+    </div>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 自动化工具平台. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ==================== 主题切换 ====================
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+    const html = document.documentElement;
+
+    // 检查本地存储的主题设置
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      html.setAttribute('data-theme', savedTheme);
+      themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // ==================== 数据加载 ====================
+    async function loadData() {
+      try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        renderPage(data);
+      } catch (error) {
+        console.error('加载数据失败:', error);
+      }
+    }
+
+    // ==================== 页面渲染 ====================
+    function renderPage(data) {
+      // 团队介绍
+      document.getElementById('team-intro').innerHTML = data.intro;
+
+      // 社交链接
+      if (data.social) {
+        if (data.social['公众号']) {
+          document.getElementById('weixin-link').href = data.social['公众号'];
+        }
+        if (data.social['小红书']) {
+          document.getElementById('xiaohongshu-link').href = data.social['小红书'];
+        }
+      }
+
+      // 重点推荐
+      if (data.featured && data.featured.length > 0) {
+        renderFeatured(data.featured);
+      }
+
+      // 平台 tabs
+      renderPlatformTabs(data.platforms);
+
+      // 默认显示第一个平台
+      if (data.platforms.length > 0) {
+        renderPlatformContent(data.platforms[0], 0);
+      }
+    }
+
+    // ==================== 渲染重点推荐 ====================
+    function renderFeatured(featuredList) {
+      const container = document.getElementById('featured-grid');
+      container.innerHTML = '';
+
+      featuredList.forEach(tool => {
+        const card = document.createElement('article');
+        card.className = 'featured-card';
+
+        const priceHtml = `
+          <div class="tool-price">
+            <span class="price-item">
+              <span class="price-label">月</span>
+              <span class="price-value">${tool.price.monthly}</span>
+            </span>
+            <span class="price-item">
+              <span class="price-label">半年</span>
+              <span class="price-value">${tool.price.halfYear}</span>
+            </span>
+            <span class="price-item lifetime">
+              <span class="price-label">买断</span>
+              <span class="price-value">${tool.price.lifetime}</span>
+            </span>
+          </div>
+        `;
+
+        card.innerHTML = `
+          <span class="featured-badge">热卖</span>
+          <a href="${tool.link}" target="_blank" class="tool-link">
+            <h3 class="tool-name">${tool.name}</h3>
+          </a>
+          ${priceHtml}
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // ==================== 渲染平台导航 ====================
+    function renderPlatformTabs(platforms) {
+      const tabsContainer = document.getElementById('platform-tabs');
+      tabsContainer.innerHTML = '';
+
+      platforms.forEach((platform, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <button class="platform-tab" data-platform-index="${index}" role="tab" aria-selected="${index === 0}">
+            <span class="platform-tab-icon">${platform.icon}</span>
+            <span class="platform-tab-text">${platform.name}</span>
+          </button>
+        `;
+
+        const tabBtn = li.querySelector('.platform-tab');
+        tabBtn.addEventListener('click', () => {
+          // 更新 active 状态
+          document.querySelectorAll('.platform-tab').forEach(tab => {
+            tab.classList.remove('active');
+            tab.setAttribute('aria-selected', 'false');
+          });
+          tabBtn.classList.add('active');
+          tabBtn.setAttribute('aria-selected', 'true');
+          // 渲染平台内容
+          renderPlatformContent(platform, index);
+        });
+
+        tabsContainer.appendChild(li);
+      });
+
+      // 默认第一个 active
+      tabsContainer.querySelector('.platform-tab').classList.add('active');
+    }
+
+    // ==================== 渲染平台内容 ====================
+    function renderPlatformContent(platform, index) {
+      const contentContainer = document.getElementById('platform-content');
+      contentContainer.innerHTML = '';
+
+      const platformSection = document.createElement('section');
+      platformSection.className = 'platform-section';
+      platformSection.id = `platform-${index}`;
+
+      platform.categories.forEach((category) => {
+        const categoryDiv = document.createElement('div');
+        categoryDiv.className = 'category-section';
+
+        const categoryHeader = document.createElement('header');
+        categoryHeader.className = 'category-header';
+        categoryHeader.innerHTML = `
+          <span class="category-icon">${category.icon || '📌'}</span>
+          <h2 class="category-title">${category.name}</h2>
+        `;
+        categoryDiv.appendChild(categoryHeader);
+
+        const toolsGrid = document.createElement('div');
+        toolsGrid.className = 'tools-grid';
+
+        category.tools.forEach(tool => {
+          const toolCard = document.createElement('article');
+          toolCard.className = 'tool-card';
+
+          // 价格显示逻辑
+          const hasMonthly = tool.price.monthly;
+          const hasHalfYear = tool.price.halfYear;
+          const hasLifetime = tool.price.lifetime;
+
+          let priceHtml = '';
+          if (hasMonthly || hasHalfYear || hasLifetime) {
+            priceHtml = '<div class="tool-price">';
+            if (hasMonthly) {
+              priceHtml += `<span class="price-item"><span class="price-label">月</span><span class="price-value">${tool.price.monthly}</span></span>`;
+            }
+            if (hasHalfYear) {
+              priceHtml += `<span class="price-item"><span class="price-label">半年</span><span class="price-value">${tool.price.halfYear}</span></span>`;
+            }
+            if (hasLifetime) {
+              priceHtml += `<span class="price-item lifetime"><span class="price-label">买断</span><span class="price-value">${tool.price.lifetime}</span></span>`;
+            }
+            priceHtml += '</div>';
+          } else {
+            priceHtml = '<div class="tool-price placeholder"><span>价格待发布</span></div>';
+          }
+
+          toolCard.innerHTML = `
+            <a href="${tool.link}" target="_blank" class="tool-link">
+              <h3 class="tool-name">${tool.name}</h3>
+            </a>
+            ${priceHtml}
+          `;
+          toolsGrid.appendChild(toolCard);
+        });
+
+        categoryDiv.appendChild(toolsGrid);
+        platformSection.appendChild(categoryDiv);
+      });
+
+      contentContainer.appendChild(platformSection);
+    }
+
+    // ==================== 初始化 ====================
+    document.addEventListener('DOMContentLoaded', loadData);
+  </script>
+</body>
+</html>

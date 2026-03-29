@@ -1,0 +1,151 @@
+{
+  "description": "团队介绍",
+  "intro": "我们团队专注为**电商、品牌、自媒体团队**提供自动化流程工具。已落地 **300+** 场景，覆盖**小红书/抖音/电商/跨境**多个领域自动化解决方案。",
+  "certification": "团队成员均来自一线大厂、头部电商公司，是影刀 RPA 官方认证服务商。",
+  "social": {
+    "公众号": "https://mp.weixin.qq.com/s/OQzWpb2-YKyE2cQwgiplSw",
+    "小红书": "https://www.xiaohongshu.com/user/profile/60f6a89b0000000001005633"
+  },
+  "purchaseNote": "购买即享服务：提供完整图文 + 视频演示 ；1V1 免费答疑；",
+  "lifetimePrivilege": "买断制特权：源码直接部署到您的账号；免费远程演示指导。永久使用，无需续费。",
+  "contact": "需要购买下列产品，或者有需要沟通的业务场景。请微信扫码咨询：",
+
+  "featured": [
+    {
+      "name": "小红书低粉爆款笔记采集器",
+      "link": "https://vind9redwd.feishu.cn/wiki/JYLDw5D22iPunvk9lyuc3NcZnLc",
+      "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}
+    },
+    {
+      "name": "【网页端】小红书自动发布工具",
+      "link": "https://vind9redwd.feishu.cn/wiki/URxAwGwQki22IVkDFALcKwyjn8b",
+      "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}
+    }
+  ],
+
+  "platforms": [
+    {
+      "id": "xiaohongshu",
+      "name": "小红书平台",
+      "icon": "🍠",
+      "categories": [
+        {
+          "name": "内容选题",
+          "icon": "💡",
+          "tools": [
+            {"name": "采集搜索关键词笔记（低粉爆款）", "link": "https://vind9redwd.feishu.cn/wiki/JNerwItU4i48aqkKZx1c0OW3n1b", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书低粉爆款笔记采集器", "link": "https://vind9redwd.feishu.cn/wiki/JYLDw5D22iPunvk9lyuc3NcZnLc", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集单篇笔记到飞书多维表格", "link": "https://vind9redwd.feishu.cn/wiki/W9xfwwue5iOzERkferIcLReknzk", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集对标博主笔记（支持多个博主）", "link": "https://vind9redwd.feishu.cn/wiki/Ot3CwnO5SiLsHykgGkgcKnOxnKh", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集一级、二级下拉搜索词", "link": "https://vind9redwd.feishu.cn/wiki/XRgKwj13uiWP38kgMcwcaGuVn4g", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "爆款笔记封面采集器", "link": "https://vind9redwd.feishu.cn/wiki/SUWdwMTIriQzFNk7JgmcXZ7znVc", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "批量提取视频文案，然后自动仿写文案", "link": "https://vind9redwd.feishu.cn/wiki/HtArwpac4iYBR3k0LgfcHIsfnWh", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书低粉爆款笔记采集器（推荐页采集）", "link": "https://vind9redwd.feishu.cn/wiki/YaNkwbGW0iedLdk5elGcwkxOnwh", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        },
+        {
+          "name": "日常经营",
+          "icon": "🏪",
+          "tools": [
+            {"name": "【网页端】小红书自动发布工具", "link": "https://vind9redwd.feishu.cn/wiki/URxAwGwQki22IVkDFALcKwyjn8b", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "【手机端】小红书自动发布工具", "link": "https://vind9redwd.feishu.cn/wiki/SSBKwg42iik9H0kj4lCcJSQSnmA", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书自动举报工具（笔记/账号）", "link": "https://vind9redwd.feishu.cn/docx/AOUKdYCqnogGpDx1QIwc8eIinOf", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书视频批量下载器", "link": "https://vind9redwd.feishu.cn/wiki/RU1ewEYDWiHDMnkLSnIcgfcXnUK", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "批量采集博主精准粉丝数", "link": "https://vind9redwd.feishu.cn/wiki/RxrAwi4aWibQ4qkH1JCcXMkZneZ", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "监控对标博主更新，并采集更新笔记", "link": "https://vind9redwd.feishu.cn/wiki/BDW8w4k01i2ZFEkKAuIcAacInTg", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书自动养号工具", "link": "https://vind9redwd.feishu.cn/wiki/DhzSwMkojiVvkZkznqdcDSnmnab", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        },
+        {
+          "name": "成交转化",
+          "icon": "💰",
+          "tools": [
+            {"name": "采集小红书低粉爆款商品", "link": "https://vind9redwd.feishu.cn/wiki/RxiUwV4ukiiUH5kK5mLcdjtSnKc", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集「24小时加购」商品", "link": "https://vind9redwd.feishu.cn/wiki/UXjJwtnNtiLvvFkcwTkcLqfrnbd", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书爆款商品笔记采集器", "link": "https://vind9redwd.feishu.cn/wiki/DdpqwnJ7Di3iBJkDEkBcTP5bn2f", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集对标店铺商品（多个店铺同时采集）", "link": "https://vind9redwd.feishu.cn/wiki/XU98w1QYHiFw96klZVScwTKYnlh", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "一张多维表格，管理店铺经营数据", "link": "https://vind9redwd.feishu.cn/wiki/AXLiwlbOniASMMko9MfcrUFLn9e", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集千帆后台热搜词", "link": "https://vind9redwd.feishu.cn/wiki/NSkqwS2hpiBFSbkGKgNca1J5ndf", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        },
+        {
+          "name": "机构/电商/品牌",
+          "icon": "🏢",
+          "tools": [
+            {"name": "采集小红书蒲公英相似博主笔记", "link": "https://vind9redwd.feishu.cn/wiki/BViWwPPH9iMxzfkfLpbcrxzAnNf", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集小红书蒲公英达人数据", "link": "https://vind9redwd.feishu.cn/wiki/ZukPwQg8iiJLyrkZTLSc2SUDnke", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "一张多维表格，管理团队笔记数据", "link": "https://vind9redwd.feishu.cn/wiki/MsDmwiDytim5c0kf3JKcUDidngf", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集小红书博主邮箱", "link": "https://vind9redwd.feishu.cn/wiki/Q11hw80t0iVqrDkhCqPcbWMJnyt", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书笔记互动数据提升工具", "link": "https://ai.feishu.cn/wiki/LC5DwbA8KiJzgFkJIOUcPtAcnwh", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集创作服务平台笔记数据", "link": "https://vind9redwd.feishu.cn/wiki/SbR1w9mYniUrRhkUPnZcL1nynyc", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "品牌 GEO 效果监控工具", "link": "https://vind9redwd.feishu.cn/wiki/ZpcvwWcWPi0UDDkdklRcXKVinxc", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书蒲公英达人自动邀约工具", "link": "https://ai.feishu.cn/wiki/Eh2kwgigTiDWNXkGamJcQCxEnTg", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        },
+        {
+          "name": "截流方案",
+          "icon": "🎯",
+          "tools": [
+            {"name": "【网页端】小红书自动评论工具", "link": "https://ai.feishu.cn/wiki/VLI8wtFdYiDtV7kognJcfSpFnCb", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "【网页端】小红书自动回复工具", "link": "https://ai.feishu.cn/wiki/VLI8wtFdYiDtV7kognJcfSpFnCb", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "【手机端】小红书截流工具", "link": "https://ai.feishu.cn/wiki/OraRwTZm2iSbWBkGEMvcnF1Nn7I", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "小红书自动私信工具", "link": "https://ai.feishu.cn/wiki/MQCRwOjMritJFMkeEjlcZ3qanUi", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集小红书笔记评论", "link": "https://vind9redwd.feishu.cn/wiki/UUlGwEVIRi38n8kw515cl5rMnSh", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        },
+        {
+          "name": "虚拟资料方案",
+          "icon": "📚",
+          "tools": [
+            {"name": "Word、PDF批量转图片", "link": "https://vind9redwd.feishu.cn/wiki/KQ4Aw1fsXiiuuxk7YGXcgunJnJd", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "douyin",
+      "name": "抖音平台",
+      "icon": "🎵",
+      "categories": [
+        {
+          "name": "内容选题",
+          "icon": "💡",
+          "tools": [
+            {"name": "采集搜索键词短视频数据（低粉爆款）", "link": "https://vind9redwd.feishu.cn/wiki/CkpHwhpDDibIpJk1FJ9cWfDhnBe", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "监控对标账号更新，并采集更新视频", "link": "https://vind9redwd.feishu.cn/wiki/YpeMwueiFiRaeYkKc9jcJGJLn0b", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "自动提取短视频文案、仿写文案", "link": "https://vind9redwd.feishu.cn/wiki/FEfPwsRv6iqESGkSGeEcXb08nze", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集对标账号博主数据", "link": "https://vind9redwd.feishu.cn/wiki/RNIFwmIzZiZqORkla5AcezVDnBb", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集搜索一级、二级下拉搜索词", "link": "https://vind9redwd.feishu.cn/wiki/FM14wUICZiY0pgkEKy2cbI9bnKf", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集短视频评论", "link": "https://vind9redwd.feishu.cn/wiki/St2Bw8u1hiZSdbkRn7ccF6PqnLh", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集抖音创作者中心数据", "link": "https://ai.feishu.cn/wiki/FistwpN9aixqLXkDwdbcpusknlD", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "抖音短视频批量下载器", "link": "https://vind9redwd.feishu.cn/wiki/RU1ewEYDWiHDMnkLSnIcgfcXnUK", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        },
+        {
+          "name": "日常经营",
+          "icon": "🏪",
+          "tools": [
+            {"name": "抖音短视频互动数据提升工具", "link": "https://ai.feishu.cn/wiki/Dwy9w0MYRiDWE7k5XpGcpSN3nUb", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "一张多维表格，管理团队短视频数据", "link": "https://vind9redwd.feishu.cn/wiki/CQAQwByoqiLPApkdGbUcnBtonsc", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solutions",
+      "name": "客户解决方案",
+      "icon": "🤖",
+      "categories": [
+        {
+          "name": "通用解决方案",
+          "icon": "🛠️",
+          "tools": [
+            {"name": "微信消息自动转发到多个群", "link": "https://mp.weixin.qq.com/s/x_ufgqAO90RnBHUi8EZNAg", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "采集店小秘商品数据", "link": "https://mp.weixin.qq.com/s/jepthnNdYXRRWCpQaYCedw", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}},
+            {"name": "抖音品牌商家，找达人合作全自动方案", "link": "https://mp.weixin.qq.com/s/fnEjuooinVVui2nnelgHbg", "price": {"monthly": "20元", "halfYear": "368元", "lifetime": "598元"}}
+          ]
+        }
+      ]
+    }
+  ]
+}
